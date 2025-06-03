@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+/* @plugin "daisyui"; */
+
+@theme {
+    --color-primary: #fd0;
+    --color-secondary: #4a4a4a;
+    --font-sans:"Roboto", "sans-serif";
+}
+
+@utility container {
+    /* padding-inline: 1rem;  */
+    margin-left: auto;
+    margin-right: auto;
+    width:90%;
+    display:flex;
+   
+
+   @variant sm {
+       /* max-width: 640px; */
+       /* padding-inline: 2rem; */
+       width:510px;
+
+   }
+    @variant md {
+        /* max-width: 768px; */
+        /* width:80vw; */
+        width:690px;
+   }
+    @variant lg {
+        /* max-width: 1024px; */
+        /* padding-inline:4rem; */
+        width:930px;
+
+   }
+    @variant xl {
+       /* max-width: 1280px; */
+        /* padding-inline:5rem; */
+        width:1140px;
+    }
+    @variant 2xl {
+       /* max-width: 1280px; */
+        /* padding-inline:6rem; */
+    }
+}
+
+
+/* layer components in version 4 */
+@layer components {
+    .primary-btn{
+        @apply bg-primary text-white py-2 px-4 rounded shadow-sm hover:shadow-md;
+    }
+    .sub-title{
+        /* uppercase font-semibold text-sm */
+        font-weight:650;
+        font-size:13px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color:#4a4a4a;
+        font-family:"Roboto", sans-serif;
+
+    }
+}
+/* layer in v3 */
+/* @layer components{
+    .primary-btn{
+        @apply bg-primary text-white py-2 px-4 rounded;
+    }
+} */
+
+
+/* body{
+    font-family:"Roboto", sans-serif;
+} */
