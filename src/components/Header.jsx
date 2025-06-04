@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../assets/images/1.png";
 import { Search, Bell, User, ShoppingBag } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -9,7 +10,10 @@ const Header = () => {
         {/* logo */}
         <div className="">
           {/* <a href=""> */}
-            <img src={Logo} alt="" className="h-8" />
+          
+          <Link to="/"><img src={Logo} alt="" className="h-8" /></Link>
+
+            
           {/* </a> */}
         </div>
         {/* buttons */}

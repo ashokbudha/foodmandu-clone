@@ -7,7 +7,7 @@ const RestaurantCard = (props) => {
   return (
     <div className='flex flex-col gap-3 sub '>
       <a href="#">
-        <img src={VendorListingWebImageName} alt=""  className='h-35 md:h-auto w-[100%] object-cover'/>
+        <img src={VendorListingWebImageName} alt={Name}  className='h-35 md:h-50 w-[100%] object-cover'/>
       </a>
       <a href="#">
         <h3 className='text-secondary capitalize text-xl font-light tracking-wide'>{Name}</h3>
