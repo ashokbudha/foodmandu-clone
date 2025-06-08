@@ -1,11 +1,19 @@
 import React from 'react'
+import { useState } from 'react'
 import InfiniteScrollingComponent from '../components/InfiniteScrollingComponent'
 import Header from '../components/Header'
 import { MapPin} from 'lucide-react'
 import Footer from "../components/Footer"
+import CuisineFilter from "../components/CuisineFilter"
+
+
 
 
 const AllRestaurant = () => {
+  const [selectedFilters, setSelectedFilters] = useState([]);
+  const [appliedFilters,setAppliedFilters] =useState([]);
+
+
   return (
     <section>
       {/* make change to header so that searchbar is seen in allRestaurant page  */}
@@ -31,7 +39,8 @@ const AllRestaurant = () => {
         <div className="container justify-between py-8 items-center border-b-1 border-gray-200">
           {/* filter */}
           <div className="">
-            <button className=' border-gray-300 py-1 px-6 border-1 bg-white text-gray-400 text-start font-light'>Filters</button>
+            {/* <button className=' border-gray-300 py-1 px-6 border-1 bg-white text-gray-400 text-start font-light'>Filters</button> */}
+            <CuisineFilter selectedFilters={selectedFilters}  setSelectedFilters={setSelectedFilters}  onAppliedFilters={()=>setAppliedFilters([...selectedFilters])}/>
           </div>
           {/* sort */}
           <div className="flex items-center gap-1">
@@ -41,7 +50,7 @@ const AllRestaurant = () => {
           </div>
         </div>
       </section>
-      <InfiniteScrollingComponent/>
+      <InfiniteScrollingComponent selectedFilters={appliedFilters}/>
       <Footer/>
     </section>
   )

@@ -1,0 +1,30 @@
+import axios from 'axios';
+
+const url = "https://foodmandu.com/webapi/api/Vendor/GetVendors1";
+
+const params = {
+  Cuisine: "",
+  DeliveryZoneId: 1,
+  IsFavorite: false,
+  IsRecent: false,
+  Keyword: "",
+  LocationLat: 27.7026754,
+  LocationLng: 85.3191018,
+  PageNo: 1,
+  PageSize: 6,
+  SortBy: 4,
+  VendorName: "",
+  VendorTags: JSON.stringify({
+    Indian: true,
+    Thai: true,
+    Chinese: true,
+    Italian: true
+  }),
+  VendorTagsCSV: "Indian,Thai,Chinese,Italian,",
+  filtertags: "Indian,Thai,Chinese,Italian",
+  search_by: "restaurant"
+};
+
+axios.get(url, { params })
+  .then(response => console.log(response.data))
+  .catch(error => console.error(error));

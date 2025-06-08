@@ -5,7 +5,7 @@ import playstoreImg from "../assets/images/google-play-store-logo.png"
 const Footer = () => {
   return (
     <footer className="py-16">
-      <div className="container flex-col font-light">
+      <div className="container flex-col font-light ">
         <div className="grid grid-cols-1 sm:grid-cols-4 gap-8 sm:gap-1 md:gap-3 pb-8">
           <div className="  flex flex-col gap-12">
             <ul className="flex flex-col gap-1.5">

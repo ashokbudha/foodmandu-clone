@@ -20,7 +20,7 @@ const Header = () => {
         <div className="">
           <ul className="flex gap-4">
             <li>
-              <Search className="block md:hidden text-gray-500  cursor-pointerhover:text-red-700" />
+              <Search className="block md:hidden text-gray-500  cursor-pointer hover:text-red-700" />
             </li>
             <li>
               <Bell className="text-gray-500 cursor-pointer hover:text-red-700" />
