@@ -3,7 +3,6 @@ import { useState } from 'react'
 import InfiniteScrollingComponent from '../components/InfiniteScrollingComponent'
 import Header from '../components/Header'
 import { MapPin} from 'lucide-react'
-import Footer from "../components/Footer"
 import CuisineFilter from "../components/CuisineFilter"
 
 
@@ -17,7 +16,7 @@ const AllRestaurant = () => {
   return (
     <section>
       {/* make change to header so that searchbar is seen in allRestaurant page  */}
-      <Header/>
+      {/* <Header/> */}
       {/* title section */}
       <section className='pt-24 bg-[#fafafa] border-b-1 border-gray-200'>
         <div className="container py-8 justify-between items-center">
@@ -51,7 +50,7 @@ const AllRestaurant = () => {
         </div>
       </section>
       <InfiniteScrollingComponent selectedFilters={appliedFilters}/>
-      <Footer/>
+      
     </section>
   )
 }
