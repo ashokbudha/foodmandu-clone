@@ -1,12 +1,20 @@
-# React + Vite
+# 🍽️ Foodmandu Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project uses real-time data from [Foodmandu](https://foodmandu.com/), which may be restricted by CORS (Cross-Origin Resource Sharing) policies.
 
-Currently, two official plugins are available:
+To allow your browser to fetch data from Foodmandu APIs during development, you need to **enable CORS**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 How to Enable CORS
 
-## Expanding the ESLint configuration
+Install the following Chrome extension to allow cross-origin requests:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔗 [Allow CORS: Access-Control-Allow-Origin](https://chromewebstore.google.com/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en&pli=1)
+
+> ⚠️ Use this extension **only for development purposes** and disable it when not needed for security reasons.
+
+---
+
+## 📌 Note
+
+- Make sure the extension is toggled ON when testing API calls.
+- This project is not affiliated with Foodmandu. The data is used for learning/demo purposes only.
