@@ -34,7 +34,7 @@ const RestaurantMenuPage = () => {
     fetchRestaurantMenu();
     fetchRestaurantInfo();
   }, [resId]);
-  console.log(restaurantInfo);
+  // console.log(restaurantInfo);
   // console.log(restaurantMenu);
 
   if (Object.keys(restaurantInfo).length === 0 || restaurantMenu.length === 0) {
