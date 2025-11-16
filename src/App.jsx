@@ -1,9 +1,8 @@
-import React from "react";
 import Home from "./pages/Home";
 import AllRestaurant from "./pages/AllRestaurant";
 import { createBrowserRouter, Outlet } from "react-router-dom";
 import Header from "./components/Header";
-import RestaurantMenu from "./pages/RestaurantMenu";
+import RestaurantMenuPage from "./pages/RestaurantMenuPage";
 import Footer from "./components/Footer"
 
 
@@ -32,7 +31,7 @@ const App = createBrowserRouter([
       },
       {
         path:"/restaurant/:resId",
-        element:<RestaurantMenu/>
+        element:<RestaurantMenuPage/>
       }
     ]
   }

@@ -11,6 +11,7 @@ const InfiniteScrollingComponent = ({ selectedFilters }) => {
   
 
   const url = "https://foodmandu.com/webapi/api/Vendor/GetVendors1";
+  
 
   const fetchRestaurants = async (pageNumber) => {
     if (fetchedPages.current.has(pageNumber)) return; // ✅ Prevent duplicate fetch
